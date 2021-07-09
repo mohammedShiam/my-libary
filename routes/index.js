@@ -1,9 +1,9 @@
 const router = require('express').Router()
 
 
-
+// Root Route
 router.get('/', (req, res, next)=>{
-    res.send('Hello World')
+    res.render('../views/index.ejs')
 })
 
 
