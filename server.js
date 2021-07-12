@@ -10,6 +10,7 @@ const bodyParser = require('body-parser')
 // Import Route
 const indexRoute = require('./routes/index')
 const authorRoute = require('./routes/authors')
+const bookRoute = require('./routes/book')
 
 // Setup Views
 app.set('view engine', 'ejs')
@@ -29,6 +30,7 @@ app.use(middleware)
 // Use Route
 app.use('/', indexRoute)
 app.use('/authors', authorRoute)
+app.use('/books', bookRoute)
 
 // App Listen & Setup Data-Base
 const port = process.env.PORT || 5050
