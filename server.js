@@ -6,6 +6,7 @@ const app = express()
 const expressLayout = require('express-ejs-layouts')
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
+const methodOverride = require('method-override')
 
 // Import Route
 const indexRoute = require('./routes/index')
@@ -22,7 +23,8 @@ const middleware = [
     expressLayout,
     express.json(),
     express.static('public'),
-    bodyParser.urlencoded({limit:'10mb', extended:false})
+    bodyParser.urlencoded({limit:'10mb', extended:false}),
+    methodOverride('_method')
     
 ]
 app.use(middleware)
