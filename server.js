@@ -14,7 +14,8 @@ const authorRoute = require('./routes/authors')
 const bookRoute = require('./routes/book')
 
 // Setup Views
-app.set('view engine', 'ejs')
+app.set
+('view engine', 'ejs')
 app.set('views', __dirname + '/views')
 app.set('layout', 'layouts/layout')
 
@@ -23,9 +24,12 @@ const middleware = [
     expressLayout,
     express.json(),
     express.static('public'),
-    bodyParser.urlencoded({limit:'10mb', extended:false}),
+    bodyParser.urlencoded({
+        limit: '10mb',
+        extended: false
+    }),
     methodOverride('_method')
-    
+
 ]
 app.use(middleware)
 
@@ -38,9 +42,9 @@ app.use('/books', bookRoute)
 const port = process.env.PORT || 5050
 const monogURI = 'mongodb+srv://User01:user01@cluster0.snr3u.mongodb.net/MyLiabry?retryWrites=true&w=majority'
 mongoose.connect(monogURI, {
-    useNewUrlParser:true,
-    useUnifiedTopology:true
+    useNewUrlParser: true,
+    useUnifiedTopology: true
 })
-app.listen(port, (e)=>{
+app.listen(port, (e) => {
     console.log(`SERVER IS RUNNING ON PORT ${port}`)
 })

@@ -1,0 +1,41 @@
+:root{
+    --title-font-size:2rem;
+    --title-font-weight:bold;
+    --nav-link-font-weight:500;
+}
+
+.header-title{
+    color:var(--color-text-light);
+    font-size: var(--title-font-size);
+    font-weight: var(--title-font-weight);
+    text-decoration: none;
+}
+.header-nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.header-nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+}
+
+.header-nav li{
+    list-style: none;
+}
+.header-nav li a{
+    color:var(--text-colot-light);
+    text-decoration: none;
+    padding: 1rem;
+    font-weight: var(--nav-link-font-weight);
+}
+
+.header-nav li:hover, .header-title:hover{
+    color:#ffffff;
+    transition: .5;
+}

@@ -1,0 +1,29 @@
+@import 'shared/variable.css';
+@import 'shared/header.css';
+@import 'shared/button.css';
+
+:root{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em  ;
+    color:var(--color-text-light)
+}
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(to right, var(--color-background-dark), var(--color-background-light));
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+.inner-container{
+    margin: 0 2rem;
+}
+
+.page-header{
+    font-size: 1.5rem;
+    font-weight: 500;
+}

@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const Author = require('../models/Authors')
+const Author = require('../models/Author')
 const Book = require('../models/Book');
 
 // All Authors

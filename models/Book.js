@@ -25,7 +25,7 @@ const bookSchema = new mongoose.Schema({
   author: {
     type: mongoose.Schema.Types.ObjectId,
     required: true,
-    ref: "Authors",
+    ref: "Author",
   },
   coverImage:{
     type: Buffer,
@@ -34,7 +34,8 @@ const bookSchema = new mongoose.Schema({
   coverImageType:{
     type:String,
     required:true
-  }
+  },
+  
 });
 
 bookSchema.virtual('coverImagePath').get(function(){
