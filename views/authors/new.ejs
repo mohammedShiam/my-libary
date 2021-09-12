@@ -3,6 +3,9 @@
 
 <form action="/authors/new" method="POST">
     <%- include('../authors/_form_field.ejs') %> 
-    <a href="/authors">Cancel</a>
-    <button type="submit">Creat</button>
+    
+    <div class="form-row form-row-end btn-row">
+        <a class="btn btn-danger" href="/authors">Cancel</a>
+        <button class="btn btn-primary" type="submit">Creat</button>
+    </div>
 </form>

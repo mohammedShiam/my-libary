@@ -1,6 +1,7 @@
 @import 'shared/variable.css';
 @import 'shared/header.css';
 @import 'shared/button.css';
+@import 'shared/form.css';
 
 :root{
     font-family: Arial, Helvetica, sans-serif;

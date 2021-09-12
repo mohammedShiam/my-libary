@@ -1,0 +1,71 @@
+:root{
+    --form-label-font-size:1.3rem;
+    --form-input-background-color: hsl(var(--color-base-hue), 100%, 31%);
+    --form-input-border-color: hsl(var(--color-base-hue), 100%, 50%);
+    --form-input-border-light: hsl(var(--color-base-hue), 100%, 80%);
+
+}
+.form-row{
+    display: flex;
+    margin-bottom: .5rem;
+}
+.form-items{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0;
+    margin-left: 2rem;
+    flex-grow: 1;
+}
+
+.form-items:first-child{
+    margin-left: 0;
+}
+.form-item-no-grow{
+    flex-grow: 0;
+
+}
+
+.form-items > label {
+    font-size: var(--form-label-font-size);
+    margin-bottom: .25rem;
+    margin-left: .25rem;
+}
+.form-items input, .form-items select, .form-items textarea {
+    height: 2rem;
+    padding: .25rem .5rem;
+    border-radius: .25rem;
+    border: 1px solid var(--form-input-border-color);
+    background-color: var(--form-input-background-color);
+    color: var(--color-text-light);
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+  }
+  .form-row-end{
+      justify-content: flex-end;
+  }
+  .form-items input:focus, .form-items select:focus, .form-items textarea:focus{
+      border-color: var(--form-input-border-light);
+  }
+  .form-items select option {
+    background: black;
+  }
+  .form-items textarea{
+      height: 100%;
+      resize: none;
+  }
+
+  .filepond--root{
+      font-family: Arial, Helvetica, sans-serif;
+      margin-bottom: 0;
+  }
+
+  .filepond--panel-root{
+      background-color: var(--form-input-background-color);
+      border: 1px solid var(--form-input-border-color);
+  }
+  .filepond--drop-label{
+      color:var(--color-text-light);
+      font-size: inherit;
+  }
