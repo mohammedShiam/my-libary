@@ -14,10 +14,13 @@
 <br>
 
   <% authors.forEach(author=>{ %>
-    <div class="form-row"><%= author.name %></div>
+    <div class="author-row">
+      <div class="author-name"><%= author.name %></div>
     <div class="form-row btn-row">
       <a href="/authors/<%= author.id %>" class="btn btn-primary">View</a>
       <a href="/authors/<%= author.id %>/edit" class="btn btn-primary">Edit</a>
       <%- include('../partial/deleteForm.ejs', {url:`/authors/${author.id}`}) %>
     </div>
+    </div>
 <% }) %>  
+

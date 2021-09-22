@@ -2,6 +2,8 @@
 @import 'shared/header.css';
 @import 'shared/button.css';
 @import 'shared/form.css';
+@import 'shared/author.css';
+@import 'shared/books.css';
 
 :root{
     font-family: Arial, Helvetica, sans-serif;
@@ -27,4 +29,7 @@ body{
 .page-header{
     font-size: 1.5rem;
     font-weight: 500;
+}
+.error-message{
+    color:red;
 }
